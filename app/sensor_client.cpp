@@ -30,8 +30,6 @@ void image_consumer(PipeDataInCollection<ImageFrame>* dImageFrame)
 
       // Process the frame here
 
-      cv::imshow("detected circles", frame.cv_colImg);
-
       int key = cv::waitKey(1);
 
       if (key == 'q')
